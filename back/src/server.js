@@ -18,7 +18,7 @@ io.on('connection', socket => {
   })
 })
 
-const port = 3333;
+const port = process.env.PORT || 3333;
 
 const URL = `mongodb://${process.env.USERS}:${process.env.PASSWORD}@localhost:27017/dev`
 Mongoose
