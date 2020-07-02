@@ -8,7 +8,7 @@ class BoxController {
     return response.json(box);
   }
   async show(request, response) {
-    const box = await await Box
+    const box = await Box
       .findById(request.params.id)
       .populate({
         path: 'files',
